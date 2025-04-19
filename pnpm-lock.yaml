@@ -216,8 +216,8 @@ importers:
         specifier: ^1.236.0
         version: 1.236.0
       posthog-node:
-        specifier: ^4.11.5
-        version: 4.11.5
+        specifier: ^4.12.0
+        version: 4.12.0
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -3045,6 +3045,9 @@ packages:
   '@types/node@18.19.84':
     resolution: {integrity: sha512-ACYy2HGcZPHxEeWTqowTF7dhXN+JU1o7Gr4b41klnn6pj2LD6rsiGqSZojMdk1Jh2ys3m76ap+ae1vvE4+5+vg==}
 
+  '@types/node@18.19.86':
+    resolution: {integrity: sha512-fifKayi175wLyKyc5qUfyENhQ1dCNI1UNjp653d8kuYcPQN5JhX3dGuP/XmvPTg/xRBn1VTLpbmi+H/Mr7tLfQ==}
+
   '@types/node@22.14.1':
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
@@ -5261,6 +5264,14 @@ packages:
       openai:
         optional: true
 
+  langsmith@0.3.19:
+    resolution: {integrity: sha512-NLH1WaGLALiA35TyrGuvO+Yavv1pL7bekPpG5ab7E6h5olbxp/nVmqb5WD6BoK90uM2FpX72EFQ+aQ2cn1LKoQ==}
+    peerDependencies:
+      openai: '*'
+    peerDependenciesMeta:
+      openai:
+        optional: true
+
   language-subtag-registry@0.3.23:
     resolution: {integrity: sha512-0K65Lea881pHotoGEa5gDlMxt3pctLi2RplBb7Ezh4rRdLEOtgi7n4EwK9lamnUCkKBqaeKRVebTq6BAxSkpXQ==}
 
@@ -5955,8 +5966,8 @@ packages:
       rrweb-snapshot:
         optional: true
 
-  posthog-node@4.11.5:
-    resolution: {integrity: sha512-1534IO/iX4dsWtL1dEoBGjSEXI89BPfEEFJXzBicnt5TfvZnKSG6HUpoHlEAK/A+dhG9vJqMQ40ln/gSkz+kJA==}
+  posthog-node@4.12.0:
+    resolution: {integrity: sha512-YWib8aiPXcICAZa29ZuLyjFaJE8dbxbd+v2apoIEPbyMqOra9bKPYVI8XK15Q44vflaaCOOAtTV8A9DefZSbVQ==}
     engines: {node: '>=15.0.0'}
 
   preact@10.26.4:
@@ -7169,6 +7180,9 @@ packages:
   zod@3.24.2:
     resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
 
+  zod@3.24.3:
+    resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -7248,7 +7262,7 @@ snapshots:
 
   '@anthropic-ai/sdk@0.27.3':
     dependencies:
-      '@types/node': 18.19.84
+      '@types/node': 18.19.86
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -8031,7 +8045,7 @@ snapshots:
 
   '@browserbasehq/sdk@2.5.0':
     dependencies:
-      '@types/node': 18.19.84
+      '@types/node': 18.19.86
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
@@ -8343,7 +8357,7 @@ snapshots:
   '@ibm-cloud/watsonx-ai@1.6.4(@langchain/core@0.3.43(openai@4.94.0(ws@8.18.1)(zod@3.24.2)))':
     dependencies:
       '@langchain/textsplitters': 0.1.0(@langchain/core@0.3.43(openai@4.94.0(ws@8.18.1)(zod@3.24.2)))
-      '@types/node': 18.19.84
+      '@types/node': 18.19.86
       extend: 3.0.2
       ibm-cloud-sdk-core: 5.3.2
     transitivePeerDependencies:
@@ -8683,13 +8697,13 @@ snapshots:
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.19
-      langsmith: 0.3.15(openai@4.94.0(ws@8.18.1)(zod@3.24.2))
+      langsmith: 0.3.19(openai@4.94.0(ws@8.18.1)(zod@3.24.2))
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 10.0.0
-      zod: 3.24.2
-      zod-to-json-schema: 3.24.5(zod@3.24.2)
+      zod: 3.24.3
+      zod-to-json-schema: 3.24.5(zod@3.24.3)
     transitivePeerDependencies:
       - openai
 
@@ -9865,6 +9879,10 @@ snapshots:
       form-data: 4.0.2
 
   '@types/node@18.19.84':
+    dependencies:
+      undici-types: 5.26.5
+
+  '@types/node@18.19.86':
     dependencies:
       undici-types: 5.26.5
 
@@ -11669,7 +11687,7 @@ snapshots:
   ibm-cloud-sdk-core@5.3.2:
     dependencies:
       '@types/debug': 4.1.12
-      '@types/node': 18.19.84
+      '@types/node': 18.19.86
       '@types/tough-cookie': 4.0.5
       axios: 1.8.4(debug@4.4.0)
       camelcase: 6.3.0
@@ -12486,6 +12504,18 @@ snapshots:
       - ws
 
   langsmith@0.3.15(openai@4.94.0(ws@8.18.1)(zod@3.24.2)):
+    dependencies:
+      '@types/uuid': 10.0.0
+      chalk: 4.1.2
+      console-table-printer: 2.12.1
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      semver: 7.7.1
+      uuid: 10.0.0
+    optionalDependencies:
+      openai: 4.94.0(ws@8.18.1)(zod@3.24.2)
+
+  langsmith@0.3.19(openai@4.94.0(ws@8.18.1)(zod@3.24.2)):
     dependencies:
       '@types/uuid': 10.0.0
       chalk: 4.1.2
@@ -13380,7 +13410,7 @@ snapshots:
       preact: 10.26.4
       web-vitals: 4.2.4
 
-  posthog-node@4.11.5:
+  posthog-node@4.12.0:
     dependencies:
       axios: 1.8.4(debug@4.4.0)
     transitivePeerDependencies:
@@ -14845,6 +14875,12 @@ snapshots:
     dependencies:
       zod: 3.24.2
 
+  zod-to-json-schema@3.24.5(zod@3.24.3):
+    dependencies:
+      zod: 3.24.3
+
   zod@3.24.2: {}
+
+  zod@3.24.3: {}
 
   zwitch@2.0.4: {}
